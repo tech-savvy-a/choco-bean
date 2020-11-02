@@ -1,0 +1,409 @@
+/*
+    ALL CSS
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+
+html, body {
+    font-family: 'Architects Daughter';
+    background-color: #fefdfd;
+}
+
+.title-font{
+    font-family: 'Allura';
+    font-size: 6vh;
+}
+
+p {
+    font-family: 'Architects Daughter';
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: bisque;
+}
+
+.index-font{
+    color: #202020;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 5px 5px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px ;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #2E1505;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #2E1505;
+    align-items: center;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #5D3C26;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #5D3C26;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #5D3C26;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #2E1505;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/************* HOME ***************/
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: bisque;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+    color: floralwhite;
+}
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(Images/beans.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+/***************** ABOUT *********************/
+.bg-faded {
+    background-color: #5D3C26;
+    opacity: 0.9;
+}
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+      height: 75vh;
+      width:  175vh;
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -4rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/*************** BAKREY ******************/
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+    margin-top: 3rem;
+  }
+  .product-item .product-item-img {
+      height: 75vh;
+      width:  175vh;
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 60vw;
+  }
+}
+
+/******************* CHOCOLATE *******************/
+
+#portfolio .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+.portfolio-box > img{
+    height:  45vh;
+    width: 75vh;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(93, 60, 38, 0.8);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-family: Allura;
+  font-size: 2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+/*************************    CONTACT         ***********************/
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+    background-color: RGBA(46, 21, 5, 0.9);
+    border: 0;
+    border-bottom: 0.25rem solid #5D3C26;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.contact-section .card hr {
+  border-color: #5D3C26;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.card-body{
+    color: bisque;
+}
+
+.contact-bg{
+    background-image: url(Images/cafe.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 1rem;
+    height: 75vh;
+    position: relative;
+}
+/*******************************************************************/
+
+.footer{
+    font-size: 0.75rem;
+    padding: 1vh;
+    padding-top: 6vh;
+}
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 2vh;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: transparent;
+  transform: scale(2.2);
+}
+
+/********************************************************************/
+.narrower{
+    background-color: RGBA(46, 21, 5, 0.9);
+    color: bisque;
+    padding: 1vh;
+    margin: 2.25vh;
+    border-radius: 1.5%;
+}
+
+.map-container-5{
+    overflow:hidden;
+    padding: 2vh;
+    position :relative;
+    height: 0;
+}
+.map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 1.5%;
+}

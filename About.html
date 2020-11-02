@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    
+     <!------------------------ HEADER ------------------------->
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>The Choco Bean</title>
+        
+          <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+         <!-- Social Media Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+            <!-- My Custom CSS -->
+        <link href="mycss.css" rel="stylesheet" type="text/css">
+        
+           <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        
+    </head>
+    
+     <!------------------------ BODY ------------------------->
+   <body>
+      <!------------------------ IWrapping the whole page ------------------------->  
+    <div class="wrapper">
+       
+        <!-- Sidebar  Navigation -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                    <img src="Images/cb.png" width="60px" height= " 60px" atl="The Choco Bean Logo" >
+                <h3 class="title-font">The Choco Bean</h3>
+                <p>Chocolate has never been better.</p>
+            </div>
+
+             <!------------------------ Navigation Items ------------------------->
+            <ul class="list-unstyled components">
+                <li> <a href="Index.html">Home</a> </li>
+                
+                <li class="active">   <a href="About.html">About Us</a>  </li>
+                
+                <li> 
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Our Products</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li> <a href="Bakery.html">Bakery</a>   </li>
+                        <li> <a href="Choc.html">Chocolates</a> </li>
+                    </ul>
+                </li>
+                
+                <li> <a  href="contact.html">Contact Us</a> </li>
+            </ul>
+            
+             <!------------------------ Footer for Sidebar ------------------------->
+            <p class="footer">The Choco Bean <br> Amna S. Aamir</p>
+
+             <div class="social-buttons">
+                  <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+        </nav>
+         <!------------------------ End of Sidebar Navigation ------------------------->
+
+        <!-- Page Content  -->
+        <div id="content">
+             <!------------------------ Top Nav bar ------------------------->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-default btn-sm">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <div  class="mx-auto" style="width: auto">
+                        <h3 class="title-font"><i>The Choco Bean</i></h3>
+                    </div>
+                </div>
+            </nav>
+             <!------------------------ End of top Nav Bar ------------------------->
+            
+             <!------------------------ About section ------------------------->
+            <section class="page-section cta">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                      <div class="cta-inner text-center rounded">
+                        <h1 class="title-font"> About The Choco Beans </h1>
+                        <p class="index-font">Founded by Anaya Hathaway in the year 2015. Over the 5 years, we started off as just a little bakery around the block. From a delicious freshly baked breads to cakes and cookies.</p>
+                        <p class="index-font">When our bakery was loved by everyone in town, we built our branches across the city and started an online delivery service. </p>
+                        <p class="index-font">Soon after, we decided to make customised chocolates for everyone to enjoy. Currently we serve vegan, absolute sugar free, healthy (yes you read that right!) and all other kinds of treats for everyone to savour and enjoy. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+         <!------------------------ End of Page Content ------------------------->
+    </div>
+     <!------------------------ End of Wrapper ------------------------->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+       
+       <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+    
+    <footer>
+    </footer>
+</html>
